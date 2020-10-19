@@ -20,8 +20,14 @@ int multiply(int x, int y)
 	return x * y;
 }
 
-int subtraction(int x, int y) {
+int subtraction(int x, int y) 
+{
 	return x - y;
+}
+
+int division(int x, int y)
+{
+	return x / y;
 }
 
 
@@ -45,5 +51,22 @@ int main()
 	
 	operation = readNumber();
 
+	if (operation == 1) {
+		int out = add(x, y);
+		std::cout << "Answer is : " << out << std::endl;
+	}
+		if (operation == 2) {
+		int out = subtraction(x, y);
+		std::cout << "Answer is : " << out << std::endl;
+	}
+		if (operation == 3) {
+		int out = multiply(x, y);
+		std::cout << "Answer is : " << out << std::endl;
+	}
+		if (operation == 4) {
+		int out = division(x, y);
+		std::cout << "Answer is : " << out << std::endl;
+	}
+		
 
 }
