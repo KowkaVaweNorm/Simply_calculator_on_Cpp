@@ -1,20 +1,49 @@
-#include "main.h"
-#include <iostream>
-using namespace std;
 
+#include <iostream>
+
+
+int readNumber()
+{
+	int x;
+	std::cin >> x;
+	
+	return x;
+}
+
+int add(int x, int y)
+{
+	return x + y;
+}
+
+int multiply(int x, int y)
+{
+	return x * y;
+}
+
+int subtraction(int x, int y) {
+	return x - y;
+}
 
 
 int main()
 {
-//	int inputNum = readNumber();
-//	int inputNum2 = readNumber();
-//	writeAnswer(inputNum+inputNum2);
+	int x, y;
 	
-	signed int x{ -10 };
-	int y{ -10 };
+	std::cout << "Please enter the first number: "<< std::endl;
+	x = readNumber();
 
-	cout << "signed integer: " << x << "And his size" << sizeof(x) << endl;
+	std::cout << "Please enter the second number: " << std::endl;
+	y = readNumber();
+
+	int operation;
+
+	std::cout << "Please choose your operation: \n" <<
+		"1 : '+' \n" <<
+		"2 : '-' \n" <<
+		"3 : '*' \n" <<
+		"4 : '/' \n" << std::endl;
 	
-	
-	return 0;
+	operation = readNumber();
+
+
 }
