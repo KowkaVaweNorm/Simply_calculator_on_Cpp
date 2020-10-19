@@ -1,8 +1,7 @@
-
 #include <iostream>
+ // Its simple calculator
 
-
-int readNumber()
+int readNumber()		// reads the number that the user enters
 {
 	int x;
 	std::cin >> x;
@@ -10,22 +9,22 @@ int readNumber()
 	return x;
 }
 
-int add(int x, int y)
+int add(int x, int y)	      // return x + y
 {
 	return x + y;
 }
 
-int multiply(int x, int y)
+int multiply(int x, int y)     // return x * y
 {
 	return x * y;
 }
 
-int subtraction(int x, int y) 
+int subtraction(int x, int y)  // return x - y 
 {
 	return x - y;
 }
 
-int division(int x, int y)
+int division(int x, int y)     // return x / y
 {
 	return x / y;
 }
@@ -41,7 +40,7 @@ int main()
 	std::cout << "Please enter the second number: " << std::endl;
 	y = readNumber();
 
-	int operation;
+	int operation;   // operation that the user selects, this is operation number
 
 	std::cout << "Please choose your operation: \n" <<
 		"1 : '+' \n" <<
